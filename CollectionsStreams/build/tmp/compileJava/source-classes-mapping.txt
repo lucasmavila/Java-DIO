@@ -1,2 +1,12 @@
-Collections/Lists/ExemploList.java
- Collections.Lists.ExemploList
+Queue/ExemploLinkedList.java
+ Queue.ExemploLinkedList
+List/ExemploList.java
+ List.ExemploList
+Set/ExemploHashSet.java
+ Set.ExemploHashSet
+Set/ExemploLinkedHashSet.java
+ Set.ExemploLinkedHashSet
+Set/ExemploTreeSet.java
+ Set.ExemploTreeSet
+Map/ExemploHashMap.java
+ Map.ExemploHashMap
