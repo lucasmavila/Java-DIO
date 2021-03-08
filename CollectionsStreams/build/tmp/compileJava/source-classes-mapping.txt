@@ -1,12 +1,30 @@
-Queue/ExemploLinkedList.java
- Queue.ExemploLinkedList
-List/ExemploList.java
- List.ExemploList
 Set/ExemploHashSet.java
  Set.ExemploHashSet
+Queue/ExemploLinkedList.java
+ Queue.ExemploLinkedList
+Map/ExemploHashMap.java
+ Map.ExemploHashMap
+List/ExemploList.java
+ List.ExemploList
 Set/ExemploLinkedHashSet.java
  Set.ExemploLinkedHashSet
 Set/ExemploTreeSet.java
  Set.ExemploTreeSet
-Map/ExemploHashMap.java
- Map.ExemploHashMap
+Map/ExemploTreeMap.java
+ Map.ExemploTreeMap
+Map/ExemploHashTable.java
+ Map.ExemploHashTable
+Comparators/Estudante.java
+ Comparators.Estudante
+Comparators/EstudanteOrdemIdadeReversaComparator.java
+ Comparators.EstudanteOrdemIdadeReversaComparator
+Comparators/ComparatorsExampleList.java
+ Comparators.ComparatorsExampleList
+Optionals/ExemploOptionalEstados.java
+ Optionals.ExemploOptionalEstados
+Optionals/ExemploOptionalPrimitivo.java
+ Optionals.ExemploOptionalPrimitivo
+Optionals/ExemploOptional.java
+ Optionals.ExemploOptional
+StreamAPI/ExemploStreamAPI.java
+ StreamAPI.ExemploStreamAPI
