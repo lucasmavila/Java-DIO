@@ -1,4 +1,4 @@
-package br.com.digital.innovation.one.aula6;
+package br.com.digital.innovation.one.aula6.Lesson;
 
 import java.io.BufferedReader;
 import java.io.IOException;
