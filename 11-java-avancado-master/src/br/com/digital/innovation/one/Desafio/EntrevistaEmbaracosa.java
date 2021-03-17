@@ -3,33 +3,34 @@ package br.com.digital.innovation.one.Desafio;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.StringTokenizer;
 
 public class EntrevistaEmbaracosa {
-   public static void main(String[] args) throws IOException {
-      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-      //StringTokenizer st = new StringTokenizer(br.readLine(),"");
-      //insira sua solução aqui
-      String palavraCorrigida;
-      List<String> vogais = Arrays.asList(new String[]{"a", "e", "i", "o", "u"});
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer stEntrada = new StringTokenizer(br.readLine());
+        //insira sua solução aqui
 
-      while (true){
-         String palavra = br.readLine();
+        try {
+            while (stEntrada.hasMoreTokens()) {
+                StringBuilder palavra = new StringBuilder().append(stEntrada.nextToken());
+                String parteInicial;
+                String parteFinal;
+                boolean nenhumCorte = true;
 
-         List<String> vetLetras = new ArrayList(Arrays.asList(palavra.split("")));
-         List<String> vetLetrasA = new ArrayList<>();
-
-         vetLetras.forEach(letra -> {
-            if (!vetLetrasA.contains(letra) || (letra.equals(vetLetrasA.get(vetLetrasA.size()-1)) && !vogais.contains(letra))){
-               vetLetrasA.add(letra);
+                for (int corte = 1; corte < palavra.length() ; corte ++){
+                    parteInicial = palavra.substring(0,corte);
+                    parteFinal = palavra.substring(corte,palavra.length());
+                    if (parteInicial.endsWith(parteFinal)) {
+                        System.out.println(parteInicial);
+                        nenhumCorte = false;
+                    }
+                }
+                if (nenhumCorte){System.out.println(palavra.toString());}
+                stEntrada = new StringTokenizer(br.readLine());
             }
-         });
-         palavraCorrigida = vetLetrasA.stream().collect(Collectors.joining());
-         System.out.println(palavraCorrigida);
+        } catch (NullPointerException e) {
 
-      }
-
-   }
-
+        }
+    }
 }
